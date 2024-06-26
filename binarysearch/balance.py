@@ -58,6 +58,8 @@ class Tenzin:
                 result.append(None)
     
     # Trim the trailing None values
+    #eq [1, None, 2, None, 3, None, 4, None, None]
+    #is trim to [1, None, 2, None, 3, None, 4]
         while result and result[-1] is None:
             result.pop()
     
