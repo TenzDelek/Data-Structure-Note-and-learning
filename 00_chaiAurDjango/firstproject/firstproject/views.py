@@ -6,7 +6,9 @@ def home(request):
     # return HttpResponse('hello world:home')
 
 def about(request):
-    return HttpResponse('hello world:about')
+    return render(request,'website/about.html')
+    # return HttpResponse('hello world:about')
 
 def contact(request):
+    return render(request,'website/contact.html')
     return HttpResponse('hello world:contact')
