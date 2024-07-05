@@ -34,3 +34,25 @@ urls.py file send you to views.py -> main controller
 from there(views.py) we can also call model.py to connect with db
 and from views.py the res goes striaght to Django or (template) and back to client
 ![alt text](image.png)
+
+# Django template language (DTL)
+also known as Jinja
+
+# startapp
+> python manage.py startapp cha
+ now we have to make the system aware that new app is created
+ 1. go in setting.py in firstproject file
+```js 
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'chai',
+]
+```
+then we create template in the app and make another file(same name as the app) and a file name this
+![alt text](image-1.png)
+
